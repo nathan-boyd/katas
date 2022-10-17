@@ -1,0 +1,3 @@
+[submodule "vim/Vim-Katas"]
+	path = vim/Vim-Katas
+	url = git@github.com:adomokos/Vim-Katas.git
