@@ -20,7 +20,12 @@ rm -rf ./*/**/kata_00
 
 # clean up rust kata
 git checkout HEAD -- "${APP_DIR}/rust/01/kata_01/src/main.rs"
-rm "${APP_DIR}/rust/01/kata_01/Cargo.lock"
+rm -rf "${APP_DIR}/rust/01/kata_01/Cargo.lock"
+
+################################################################################
+# reset submodules, like vim-kata
+
+git submodule foreach git reset --hard
 
 ################################################################################
 
